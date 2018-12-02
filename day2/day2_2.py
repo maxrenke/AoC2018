@@ -12,7 +12,6 @@ with open("input.txt") as fp:
             i += 1
     for i in bucket:
         lst = bucket[i]
-        seen = set()
         match = [x for x in lst if lst.count(x) > 1]
         if match:
             print(match[0]) 
